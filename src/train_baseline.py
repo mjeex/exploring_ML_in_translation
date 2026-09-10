@@ -9,6 +9,8 @@ from sklearn.metrics import (
     accuracy_score,
     classification_report,
     confusion_matrix,
+
+    
 )
 
 
@@ -47,3 +49,17 @@ predictions = model.predict(X_dev)
 print("Accuracy:", accuracy_score(y_dev, predictions))
 print(classification_report(y_dev, predictions))
 print(confusion_matrix(y_dev, predictions))
+
+
+# new sentences test 
+new_sentences = [
+    "This movie was absolutely fantastic.",
+    "I regret watching this film.",
+    "The acting was good, but the story was painfully boring."
+]
+
+predictions = model.predict(new_sentences)
+
+for sentence, prediction in zip(new_sentences, predictions):
+    label = "positive" if prediction == 1 else "negative"
+    print(sentence, "->", label)

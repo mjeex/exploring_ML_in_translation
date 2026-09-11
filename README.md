@@ -5,7 +5,8 @@ This project is for me to learn and explore machine learning in translating text
 ## Current Progress
 1- train_baseline 
 -redundant tests with sentiment classification using LR - not much learned. evaluation results give high precision, but testing on SST data this early with basic scikit model does not convey anything useful for how ML models attribute weight to sentiment.
-
+2- 
+follow the tutorial on pytorch's "NLP From Scratch: Translation with a Sequence to Sequence Network and Attention". 
 
 
 ## Project Structure
